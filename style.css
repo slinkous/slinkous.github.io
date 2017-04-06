@@ -1,0 +1,35 @@
+body{
+  /*background: blue;*/
+  font-family: 'Inconsolata', monospace;
+}
+
+.contents {
+  display:none;
+}
+
+#navlinks {
+  float: left;
+  border-bottom: 1px solid #ccc;
+  width: 100%;
+  margin-bottom: 16px;
+  list-style: none;
+  color: red;
+}
+
+#navlinks li {
+  float: left;
+  margin-right: 16px;
+  padding: 10px 15px;
+  height: 30px;
+  line-height:30px;
+}
+
+#navlinks li a {
+  color:#666;
+  text-decoration: none;
+}
+
+#navlinks li.active a {
+  color: black;
+  border-bottom: none;
+}
