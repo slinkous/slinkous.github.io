@@ -1,4 +1,5 @@
 //objects
+size(500,500);
 
 var multiplayer = false;
 
