@@ -1,39 +1,99 @@
+img {
+  max-width: 100%
+}
+
 body{
-  /*background: blue;*/
   font-family: 'Inconsolata', monospace;
 }
 
 .contents {
   display:none;
 }
-nav{
-  margin-left: auto;
-  margin-right: auto;
-}
 
 #navlinks {
   float: left;
-  border-bottom: 1px solid #ccc;
-  width: 100%;
-  margin-bottom: 16px;
+  border-bottom: 2px solid #ccc;
+  width:100%;
+  margin-bottom: 1em;
   list-style: none;
-  color: red;
+  padding: 2em;
+
 }
+
+#navbar{
+  width: 70%;
+  float:left;
+}
+#contact{
+  width: 20%;
+  float: right;
+  border: 2px solid #ccc;
+  padding-left: 2em;
+  padding-bottom: 2em;
+}
+#contactlinks{
+  list-style:none;
+
+}
+#contactlinks li {
+  padding-top: 1.5em;
+  padding-bottom: 1.5em;
+}
+
+#contactlinks li a{
+  padding-top: 1.5em;
+  padding-bottom: 1.5em;
+}
+
 
 #navlinks li {
   float: left;
-  margin-right: 16px;
-  padding: 10px 15px;
-  height: 30px;
+  padding-top: 1.5em;
+  padding-bottom: 1.5em;
+  margin-right: 1em;
+  /* padding: 1em; */
+  height: 2em;
   line-height:30px;
 }
 
 #navlinks li a {
   color:#666;
   text-decoration: none;
+  padding: 2em;
 }
 
 #navlinks li.active a {
   color: black;
-  border-bottom: none;
+
+}
+
+.contents h2{
+  padding: 1em;
+  text-align: center;
+}
+
+#intro img{
+  width: 80%;
+  padding: 10%;
+  padding-top: 0;
+}
+
+#mvcode img{
+  width: 50%;
+  float: left;
+  padding-right: 1em;
+}
+
+#derby img{
+  width: 50%;
+  float: right;
+
+}
+
+#about div{
+  padding: 3em;
+}
+
+#about p {
+  padding: 2em;
 }
