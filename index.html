@@ -7,18 +7,18 @@
 
     <script type="text/javascript" src="jquery-3.3.1.slim.min.js"></script>
 
-    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" type="text/css" href="index.css" />
     <script type="text/javascript" src="script.js"></script>
   </head>
   <body>
     <div class="top">
     <div id="contact">
       <h5>Contact</h5>
-    <ul id="contactlinks">
-      <li><a href="http://www.github.com/slinkous">GitHub</a> </li>
-      <li><a href="http://www.linkedin.com/in/slinkous">LinkedIn</a></li>
-      <li><a href="mailto:sralinkous@gmail.com">Gmail</a></li>
-    </ul>
+      <ul id="contactlinks">
+        <li><a href="http://www.github.com/slinkous">GitHub</a> </li>
+        <li><a href="http://www.linkedin.com/in/slinkous">LinkedIn</a></li>
+        <li>sralinkous<code>@</code>gmail.com</li>
+      </ul>
     </div>
     <div id="navbar">
       <nav>
@@ -32,21 +32,33 @@
     </div>
   </div>
     <section>
-      <div id="main">
+      <div class="main">
         <div class="contents" id="about">
           <h2>About Sarah Linkous</h2>
-          <div id="intro">
-          <img src="images/intro.jpg">
-          <p>Hello, everyone! I am a Software Developer, teacher, and curriculum writer living in the Bay Area.</p>
-          <p>I have lived all over the world, and first came here to take a course on Cognitive Linguistics at U.C. Berkeley that forever changed my understanding of how language lets us codify the world. I will forever be fascinated by human communication, that we can convey our most profound musings using a system of mouth noises, frequently transmited by scrawled lines.</p>
-        </div>
+          <div class="intro">
+            <div class="img">
+              <img src="images/intro.jpg">
+            </div>
+            <div class="text">
+              <p>Hello, everyone! I am a software developer, teacher, and curriculum writer in the Bay Area.</p>
+              <p>I have lived all over the world, and first came here to take a course on Cognitive Linguistics at U.C. Berkeley that forever changed my understanding of how language lets us codify the world. I will forever be fascinated by human communication, that we can convey our most profound musings using a system of mouth noises, frequently transmited by scrawled lines.</p>
+            </div>
+          </div>
         <div id="mvcode">
-          <img src="images/minefaire.jpg" >
-          <p>I am the Lead Instructor at the original Mill Valley location of <a href="http://www.mvcode.com">MVCode Clubs</a>, where I write lessons and courses designed to introduce younger students to Computer Science concepts in an engaging, project-based curriculum. I also teach classes and get to attend events related to our learning subjects.</p>
+          <div class="img">
+            <img src="images/minefaire.jpg" >
+          </div>
+          <div class="text">
+            <p>I am the Lead Instructor at the original Mill Valley location of <a href="http://www.mvcode.com">MVCode Clubs</a>, where I write lessons and courses designed to introduce younger students to Computer Science concepts in an engaging, project-based curriculum. I also teach classes and get to attend events related to our learning subjects.</p>
+          </div>
         </div>
         <div id="derby">
-          <img src="images/derby.jpg">
-          <p>In my free time, I play Roller Derby with the San Francisco Shevil Dead of <a href="http://www.bayareaderby.com">Bay Area Derby.</a> You can follow me as #54 - Disastronaut! </p>
+          <div class="img">
+            <img src="images/derby.jpg">
+          </div>
+          <div class="text">
+            <p>In my free time, I play Roller Derby with the San Francisco Shevil Dead of <a href="http://www.bayareaderby.com">Bay Area Derby.</a> You can follow me as #54 - Disastronaut! </p>
+          </div>
         </div>
         </div>
         <div class="contents" id="projects">
@@ -58,8 +70,10 @@
         <div class="contents" id="courses">
           <h2>Courses by Sarah Linkous</h2>
           <ul>
-            <li>Side Scroll Adventure</li>
-            <li>Temple Dungeon</li>
+            <li><ul>MV Code Club
+              <li><a href="https://www.mvcode.com/courses/side-scroll-adventure">Side Scroll Adventure</a></li>
+              <li><a href="https://www.mvcode.com/courses/temple-dungeon">Temple Dungeon</a></li>
+            </ul></li>
           </ul>
         </div>
       </div>

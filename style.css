@@ -46,12 +46,12 @@ body{
 }
 
 
-#navlinks li {
+ #navlinks li {
   float: left;
   padding-top: 1.5em;
   padding-bottom: 1.5em;
   margin-right: 1em;
-  /* padding: 1em; */
+  padding: 1em;
   height: 2em;
   line-height:30px;
 }
@@ -79,7 +79,7 @@ body{
 }
 
 #mvcode img{
-  width: 50%;
+  width: 49%;
   float: left;
   padding-right: 1em;
 }
