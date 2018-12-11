@@ -56,10 +56,14 @@ body{
   margin-bottom: 1em;
 }
 
-.contents {
-
+.main {
+ width: 100%
 }
 
+.contents{
+  display: flex;
+  flex-wrap: wrap;
+}
 .contents .text {
   width: 50%
 }
