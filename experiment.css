@@ -26,6 +26,7 @@ body{
 .main {
   background-color: orange;
   display: flex;
+
   width: 100%;
   border: 5px solid black;
 }
@@ -33,6 +34,8 @@ body{
 .main .text{
   width: 50%;
   border: 5px solid black;
+  /* display: flex;
+  flex-wrap: wrap; */
 
 }
 

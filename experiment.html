@@ -8,22 +8,56 @@
     <style media="screen">
         @media (min-width: 1000px){
         .nav {
-            width: 75%;
-            order: -2;
+            width: 70%;
+            /* order: -2; */
           }
           .contact{
             width: 20%;
             order: -1;
-
           }
           body{
             background-color: green;
           }
         }
+        @media (max-width: 700px){
+          .main {
+            flex-flow: row wrap;
+          }
+          .main .text{
+            width: 100%;
+            order: 1;
+
+          }
+          .main .img{
+            width: 100%;
+            order: 2;
+          }
+        }
+        @media (max-width: 400px){
+          html, body {
+            height: 100%;
+            width: 100%;
+          }
+          .nav{
+            width: 300px;
+            height: 60%;
+            position: absolute;
+            transform: translate(-300px, 0);
+            order: -2;
+            /* transition: transform 0.3s ease; */
+          }
+          .contact{
+            width: 300px;
+            height: 60%;
+            position: absolute;
+            transform: translate(-300px, 60%);
+            transition: transform 0.3s ease;
+            order: -1;
+        }
     </style>
   </head>
   <body>
-    <div class="container">
+    <!-- <div class="container"> -->
 
 
       <div class="nav">
@@ -48,6 +82,6 @@
           <li>By E-mail</li>
         </ul>
       </div>
-    </div>
+    <!-- </div> -->
   </body>
 </html>
