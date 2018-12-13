@@ -29,6 +29,7 @@ body{
 
   width: 100%;
   border: 5px solid black;
+  order: 1;
 }
 
 .main .text{
@@ -62,7 +63,7 @@ padding: 5%;
   display: flex;
   width: 100%;
   border: 5px solid black;
-  order: 1;
+  order: 3;
 
 }
 .container{

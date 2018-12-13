@@ -10,10 +10,16 @@
         .nav {
             width: 70%;
             /* order: -2; */
+            flex-wrap: wrap;
           }
           .contact{
             width: 20%;
             order: -1;
+            flex-wrap: wrap;
+          }
+          .links{
+            flex-direction: row;
+            flex-wrap: wrap;
           }
           body{
             background-color: green;
@@ -38,35 +44,56 @@
             height: 100%;
             width: 100%;
           }
-          .nav{
+          .links{
             width: 300px;
-            height: 60%;
+            max-width: 300px;
+            height: 100%;
             position: absolute;
             transform: translate(-300px, 0);
-            order: -2;
+            flex-direction: column wrao;
+            /* order: -2; */
+
             /* transition: transform 0.3s ease; */
           }
+          .nav {
+            min-height: 50%;
+            width: 100%;
+            padding: 0px;
+          }
           .contact{
+            height: 100%
+
+          }
+          /* .contact{
             width: 300px;
-            height: 60%;
+            height: 40%;
             position: absolute;
             transform: translate(-300px, 60%);
             transition: transform 0.3s ease;
             order: -1;
+          } */
         }
     </style>
   </head>
   <body>
     <!-- <div class="container"> -->
 
-
-      <div class="nav">
-        <ul>
-          <li>One</li>
-          <li>Two</li>
-          <li>Three</li>
-        </ul>
+    <div class="links">
+        <div class="nav">
+          <ul>
+            <li>One</li>
+            <li>Two</li>
+            <li>Three</li>
+          </ul>
+        </div>
+        <div class="contact">
+          <ul>
+            <li>Contact Me</li>
+            <li>By E-mail</li>
+          </ul>
+        </div>
       </div>
+    </div>
       <div class="main">
         <div class="text">
           <h1>A title</h1>
@@ -76,12 +103,7 @@
           <img src="http://placekitten.com/200/300" alt="Stock Kitten">
         </div>
       </div>
-      <div class="contact">
-        <ul>
-          <li>Contact Me</li>
-          <li>By E-mail</li>
-        </ul>
-      </div>
+
     <!-- </div> -->
   </body>
 </html>
