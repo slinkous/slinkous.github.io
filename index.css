@@ -20,8 +20,8 @@ body{
   background-blend-mode: saturation;
   background-repeat: no-repeat;
   /* display: flex; */
-  max-width: 100%;
-  overflow: hidden;
+  /* max-width: 100%;
+  overflow: hidden; */
 }
 
 .contents {
