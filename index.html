@@ -15,10 +15,23 @@
               background-image: linear-gradient(white, gray);
               background-size: auto;
           }
-          .contents {
-
-          }
         }
+        @media (max-width: 600px){
+         #navlinks{
+           padding: 2em;
+           border: 1px solid lightgray;
+           position: absolute;
+           height: 300px;
+           /* transform: translate(0, calc(-300px + 3em)); */
+         }
+         #navlinks li {
+           width: 100%;
+         }
+         #navlinks li.active a{
+           position: sticky;
+           transform: translate(0, 0);
+         }
+       }
     </style>
   </head>
   <body>
@@ -26,14 +39,6 @@
     <!-- <img src="images/intro.jpg" id="bgimg"> -->
 
     <div class="top">
-    <div id="contact">
-      <h5>Contact</h5>
-      <ul id="contactlinks">
-        <li><a href="http://www.github.com/slinkous">GitHub</a> </li>
-        <li><a href="http://www.linkedin.com/in/slinkous">LinkedIn</a></li>
-        <li>sralinkous<code>@</code>gmail.com</li>
-      </ul>
-    </div>
     <div id="navbar">
       <nav>
         <ul id="navlinks">
@@ -41,6 +46,7 @@
           <li><a href="#projects">Projects</a></li>
           <li><a href="#writing">Writing</a></li>
           <li><a href="#courses">Courses</a></li>
+          <li><a href="#contact">Contact</a> </li>
         </ul>
       </nav>
     </div>
@@ -77,6 +83,7 @@
         <div class="contents" id="projects">
           <div class="text">
           <h2>Projects by Sarah Linkous</h2>
+          <h3> Rails</h3>
           <ul>
             <li>
               <a href="http://lets-git-it.herokuapp.com"> <h4>Let's Git It</h4> </a>
@@ -97,12 +104,22 @@
           <div class="text">
           <h2>Courses by Sarah Linkous</h2>
           <ul>
-            <li><ul>MV Code Club
+            <li><ul> <h3> MV Code Club </h3>
               <li><a href="https://www.mvcode.com/courses/side-scroll-adventure">Side Scroll Adventure</a></li>
               <li><a href="https://www.mvcode.com/courses/temple-dungeon">Temple Dungeon</a></li>
             </ul></li>
           </ul>
             </div>
+        </div>
+        <div class="contents" id="contact">
+          <div class="text">
+            <h3>Contact</h3>
+            <ul id="contactlinks">
+              <li><a href="http://www.github.com/slinkous">GitHub</a> </li>
+              <li><a href="http://www.linkedin.com/in/slinkous">LinkedIn</a></li>
+              <li>sralinkous<code>@</code>gmail.com</li>
+            </ul>
+          </div>
         </div>
       </div>
     </section>

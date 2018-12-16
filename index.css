@@ -4,7 +4,7 @@ html, body{
 
 img {
   max-width: 100%;
-  filter: grayscale(50%);
+  filter: grayscale(75%);
 }
 /* #bgimg{
   width: 100%;
@@ -61,18 +61,22 @@ body{
  line-height:30px;
 }
 
-#navlinks li a {
+a {
   color:#666;
   text-decoration: none;
 }
+
+ul {
+  list-style: none;
+}
+
+
 
 #navlinks li.active a {
   color: black;
 }
 
-#navlinks li a:hover{
-  /* margin-top: -1em; */
-  /* border: 1px solid red; */
+ a:hover{
   text-decoration: underline;
 }
 
@@ -83,10 +87,10 @@ body{
 #contactlinks li{
 
 }
-#contactlinks li a {
+/* a {
   text-decoration: none;
   margin-bottom: 1em;
-}
+} */
 
 .main {
  width: 100%
@@ -118,7 +122,7 @@ body{
   padding: 1em;
 
 }
-.contents .text h2{
+h2, h3{
   text-align: center;
 }
 
