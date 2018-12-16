@@ -10,7 +10,7 @@ $(document).ready(function () {
   $('#navbar li a').on('click', function(){
     $('.contents').hide();
     var section = $(this).attr('href');
-    $(section).show();
+    $(section).css("display", "grid")
   })
 
 });

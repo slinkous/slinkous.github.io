@@ -132,3 +132,7 @@ body{
   display: none;
   order: 99;
 }
+
+#projects{
+  grid-size: auto/ auto auto auto;
+}
