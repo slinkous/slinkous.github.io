@@ -96,18 +96,32 @@ ul {
  width: 100%
 }
 
-.contents{
+.contents {
   /* display: inline-block; */
   /* flex-wrap: wrap; */
-  width: 100%;
+  width: calc(100% - 4em);
   /* display: grid; */
-
+  /* margin: 2em; */
 }
-
+/*
 #intro, #mvcode, #derby {
   width: 100%;
   display: grid;
   grid: auto/auto auto;
+} */
+
+#derby {
+  background-image: radial-gradient(white, gray), url('images/derby.jpg');
+  background-blend-mode: saturation;
+  background-size:cover;
+  min-height: 400px
+}
+
+#mvcode {
+  background-image: radial-gradient(white, gray), url('images/minefaire.jpg');
+  background-blend-mode: saturation;
+  background-size:cover;
+  min-height: 400px
 }
 .contents .text {
 
@@ -116,6 +130,7 @@ ul {
   border: 3px outset lightgray;
   margin: 1em;
   height: calc(100% - 2em);
+
 }
 
 .contents .text p {
@@ -126,11 +141,7 @@ h2, h3{
   text-align: center;
 }
 
-.contents .img {
-  height: inherit;
-  /* border: 3px outset lightgray; */
-  padding: 1em;
-}
+
 #contact {
   width: 100%;
   display: none;
