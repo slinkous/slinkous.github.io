@@ -34,7 +34,7 @@
 - **srcset**: use to choose different files based on pixel density
 	```<img src = "photo1.jpg" srcset="largerphoto.jpg 2x" alt="photo">```
 		chooses the larger photo when the pixel density is 2.
-- use ```window.devicePixelRatio`` in console to get this info
+- use ```window.devicePixelRatio``` in console to get this info
 - if browser does not support srcset, will just use the regular src image
 - can also be used with width attribute
 	```<img src="small.jpg" srcset="small.jpg 500w, medium.jpg 1000w, large.jpg 1500" alt="info">```
