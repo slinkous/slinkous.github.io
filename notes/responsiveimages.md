@@ -56,7 +56,7 @@
 - this example is in case browser doesn't support ```webp```
 
 ## Art Direction
-- add ```media="(min-width: 600") attribute to source element to choose different files for different viewports
+- add ```media="(min-width: 600")``` attribute to source element to choose different files for different viewports
 
 ## Accessibility
 - Use ``alt`` attributes that are descriptive for important images
