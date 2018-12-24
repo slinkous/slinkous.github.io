@@ -11,24 +11,30 @@
   <style media="screen">
       @media (max-width: 1000px){
         body{
-            background-image: linear-gradient(white, gray);
-            background-size: auto;
+            background-image: radial-gradient(white, gray), url("images/intro-sq.jpg");
+            background-size: cover;
         }
       }
       @media (max-width: 600px){
+        body{
+          background-image: radial-gradient(white, gray), url("images/intro-vt.jpg");
+          background-size: cover;
+        }
        #navlinks{
          padding: 2em;
          border: 1px solid lightgray;
          position: absolute;
-         height: 300px;
+         /* height: 300px; */
          /* transform: translate(0, calc(-300px + 3em)); */
        }
        #navlinks li {
          width: 100%;
+         /* display: none; */
        }
        #navlinks li.active a{
          position: sticky;
          transform: translate(0, 0);
+         /* display: block; */
        }
      }
   </style>
@@ -37,6 +43,10 @@
   <div class="top">
     <div id="navbar">
       <nav>
+        <a class="menu-nav">
+          <!-- <span class="fas fa-igloo"></span> -->
+          Menu
+        </a>
         <ul id="navlinks">
           <li class="active"><a href="#about">About</a></li>
           <li><a href="#projects">Projects</a></li>
