@@ -11,10 +11,10 @@
 - [WebAIM Checklist](https://webaim.org/standards/wcag/checklist) - a condensed version of WCAG that is intended to be more accessible itself
 - [Official WCAG 2.1 specification](https://www.w3.org/TR/WCAG21/) Comprehensive list of requirements for accessibility. Often required for gov't contracts, very verbose and some parts are outdates
 - POUR
-  - *P*erceive content.
-  - *O*perable - can users use it and the content
-  - *U*nderstandable - clear, consistent interface
-  - *R*obust - consistency and
+  - *P* erceive content.
+  - *O* perable - can users use it and the content
+  - *U* nderstandable - clear, consistent interface
+  - *R* obust - consistency and
 
 ## Focus
 
@@ -38,3 +38,35 @@
   - keep user interactive context in synch with visual site
   - Lets user know that page content has changed.
   - Call focus method of the header of section
+
+### Skip links
+
+- Allows users to skip straight through content, past nav
+- Make a div that is positioned off the top
+- Make an "anchor" (link) with the id of the main content in the url and class "skip-link"
+- also give main  a tab index of -1
+- [more info](https://developers.google.com/web/updates/2016/03/focus-start-point?hl=en)
+
+### Managing focus in components
+
+- e.g. select elements in forms
+- Aria Design Patterns lists elements and what they support
+- Roving Focus: sets tab-index to  -1 on all items, and 0 to the focused items
+- Make sure tab focus wraps back around, and uses both side and up/down arrow keys
+
+### Off-Screen content
+
+- Seem to be focused by default, even though they are off screen
+- E.g. hidden side drawer with hamburger menu
+- useful tool: log ```document.activeElement``` in console
+- also: accessibility audits in devtools
+- one solution for drawer:
+  - set to ``display: none`` or ``visiblity: invisible``
+
+### Modals and Keyboard traps
+
+- There are instances where you don't want the user to navigate back to content until they select an option
+- this is the trap
+- define variables for first and last focusable element
+- create a ```trapTabKey``` function that checks if the element is the first tabbable when pressing shift and moves to last, and vice versa if not pressing shift
+- add an esc key event that closes the modal using a ``closeModal`` function
