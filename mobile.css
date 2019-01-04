@@ -1,0 +1,28 @@
+html, body{
+  width: 100%;
+}
+
+img {
+  max-width: 100%;
+  filter: grayscale(75%);
+}
+
+
+body{
+  font-family: 'Inconsolata', monospace;
+  background-color: #ffffff;
+  font-size: 48px
+}
+
+#navlinks {
+  list-style: none;
+  /* float: left; */
+  position: fixed;
+  transform: translate(0, -200px;)
+}
+
+
+
+ .main {
+   display: none;
+ }
