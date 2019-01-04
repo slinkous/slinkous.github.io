@@ -14,15 +14,16 @@ body{
   font-size: 48px
 }
 
-#navlinks {
+nav ul{
   list-style: none;
   /* float: left; */
   position: fixed;
-  transform: translate(0, -200px;)
+  height: 400px;
+  transform: translate(0, -400px);
 }
 
 
 
- .main {
+ main {
    display: none;
  }
