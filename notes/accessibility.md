@@ -70,3 +70,64 @@
 - define variables for first and last focusable element
 - create a ```trapTabKey``` function that checks if the element is the first tabbable when pressing shift and moves to last, and vice versa if not pressing shift
 - add an esc key event that closes the modal using a ``closeModal`` function
+
+
+## Semantics
+
+- Imagine that accessible websites are like accessing websites from the 90's: organization of the dom reflects the accessible experience: 'accessibility tree'
+- Using native HTML elements like "button" gives us text support inherently, so always try to use that:
+  - important tags: main, nav, header, footer, button
+- Also needs to be labeled: Role, Name, Value
+- Use ``<label>`` tags or ``<label for>`` with form elements to make sure all their values are clear.
+- Use clear alternate text for images that is descriptive and concise
+- Decorative images should include blank alt text: ``alt=""``
+
+
+## Navigating content
+
+### Headings
+- Headings are essential. Much of users experience comes from just looking at headings first, and using this to locate themselves on the page.
+
+  - WebAIM 1.3.2: Order matters
+  - 2.4.10 : overall structure designated with headings
+  - 1.3.1 semantic tags like h1 are used to designate headings (also ol, ul)
+  - 2.4.1 headings are sufficient for skip links
+  - 2.4.6 Headings and labels are informative, not duplicate
+
+- Some headings can be placed off screen specifically for screen readers, but should be done sparingly
+- Important that heading numbers be used to organize, not for size/appearance
+
+### Links
+
+- Anti-Patterns:
+  - span with link styling: always use anchor tag
+      - shows up in links list, keyboard
+  - something that shows up with a tag but does not link: use a button tag instead
+  - image used as link: add alt text
+- 2.4.9 Purpose of link should be able to be determined from link text alone 
+  - e.g. No links that just say "Learn more" - say what about
+    also: "Click Here"
+
+
+### Landmarks
+
+- ``<main>``, ``<header>``, ``<footer>``,
+
+- ``<article>`` - Should be stand-alone, could viewed in a different context
+
+- ``<section>`` Generic divider, larger than article
+
+ - ``<aside>`` - used for groups of nav elements or other content separate from main page
+
+
+
+## ARIA
+
+So far: DOM order, focus, keyboard, semantics, labeling, headings, landmarks, links
+
+Purpose: Express semantics that HTML can not express on its own.
+
+Accessible Rich Internet Applications spec
+
+- ARIA only changes appearance in the accessibility tree
+- we still have to add focusability, styling, etc.
