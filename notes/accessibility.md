@@ -104,7 +104,7 @@
       - shows up in links list, keyboard
   - something that shows up with a tag but does not link: use a button tag instead
   - image used as link: add alt text
-- 2.4.9 Purpose of link should be able to be determined from link text alone 
+- 2.4.9 Purpose of link should be able to be determined from link text alone
   - e.g. No links that just say "Learn more" - say what about
     also: "Click Here"
 
@@ -131,3 +131,16 @@ Accessible Rich Internet Applications spec
 
 - ARIA only changes appearance in the accessibility tree
 - we still have to add focusability, styling, etc.
+
+Example: Making your own radio-button:
+  - need ARIA to designate that it is a radio button
+  - designate which one is checked
+  - use JS to switch this as well
+
+[Documentation](https://www.w3.org/TR/wai-aria-practices-1.1/)
+
+- The Practices Guide:
+  - what role the group and members of the group should have
+  - what state elements can have i.e. ```aria-checked="true"```
+  - what sort of labels the element should have
+  - also need to make sure you swap tab index with aria-checked
