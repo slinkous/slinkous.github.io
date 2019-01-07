@@ -144,3 +144,11 @@ Example: Making your own radio-button:
   - what state elements can have i.e. ```aria-checked="true"```
   - what sort of labels the element should have
   - also need to make sure you swap tab index with aria-checked
+  
+### Aria Labels
+- ``aria-label`` specifies a string to label the element. Will override a label element or text on a button
+- ``aria-labelledby`` specifies the id of the element that labels it, e.g. a span
+  - can be used on any element, not just "labellable" (?)
+  - can take multiple elements
+  - labeled-by overrides label
+  
