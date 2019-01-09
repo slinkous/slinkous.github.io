@@ -144,11 +144,22 @@ Example: Making your own radio-button:
   - what state elements can have i.e. ```aria-checked="true"```
   - what sort of labels the element should have
   - also need to make sure you swap tab index with aria-checked
-  
+
 ### Aria Labels
 - ``aria-label`` specifies a string to label the element. Will override a label element or text on a button
 - ``aria-labelledby`` specifies the id of the element that labels it, e.g. a span
   - can be used on any element, not just "labellable" (?)
   - can take multiple elements
   - labeled-by overrides label
-  
+
+### Semantic Relationships
+- ``aria-labeledby`` is an example of a relationship attribute
+- Examples:
+  - ``aria-owns``, tells that element should be treated as a child, e.g. menu that should be treated as submenu
+  - ``aria-activedescendant`` can be used to designated teh currently selected list item in the parent
+  - ``aria-describedby`` gives id of element that describes this element, e.g. parameters on a password input
+  - ``aria-posinset`` and ``aria-setsize`` can be used to show position and set size when not rendering full setrelat
+
+### Hidden content
+- ``aria-hidden="true"``, e.g. things that should not be shown to reader
+- ``hidden`` attribute does not  
