@@ -163,3 +163,18 @@ Example: Making your own radio-button:
 ### Hidden content
 - ``aria-hidden="true"``, e.g. things that should not be shown to reader
 - ``hidden`` attribute does not  
+
+
+### Aria-live
+- Exist to alert reader to content that will update dynamically and should communicate updates immediately
+- "live region" area that is marked lived
+- ``aria-live="polite"`` alerts the user when they are finished with what they are doing
+  - e.g. chat program that announces responses once in-progress info is finished
+- ``aria-live="assertive"`` interrupts, e.g. if server error is preventing saving
+- should probably be in initial page load
+- different screen readers treat differently
+
+### Aria-atomic and aria-relevant
+- ``aria-atomic="false"`` will read a whole region with a change to a  part of it
+- ``aria-relevant`` specifies what should be included for non-atomic regions
+- ``aria-busy`` can be used to temporarily ignore a region, i.e. when it is loading, then be set to false once it is loaded
