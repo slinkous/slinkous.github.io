@@ -178,3 +178,48 @@ Example: Making your own radio-button:
 - ``aria-atomic="false"`` will read a whole region with a change to a  part of it
 - ``aria-relevant`` specifies what should be included for non-atomic regions
 - ``aria-busy`` can be used to temporarily ignore a region, i.e. when it is loading, then be set to false once it is loaded
+
+## Styling for accessibility
+
+### The focus ring
+- This is implemented by default and a Webm requirement, but sometimes style of page can make the default not visible or awkward
+- ```:focus{}``` pseudoclass allows you to style
+- ```outline: 0``` will remove the focus ring and just doing this is failing to provide a way to focus, but you can also provide an alternative
+- adding ``:focus`` to your ``:hover`` styling block is an easy way to implement
+- The example here also adds a `box-shadow: 0 0 8px, 3px` as a failsafe to make sure that this is clear
+
+### Styling with aria elements
+
+Imagine you have a toggle, that gets a pressed class when toggled on:
+```html
+<div class="toggle pressed" role="button" aria-labelledby="muteLbl" aria-pressed="true">
+```
+Instead of styling it with ```.toggle.pressed{}``` use:
+```css
+   .toggle[aria-pressed="true"]{}
+```
+to get visual confirmation of the aria state, one less thing to check
+
+### Responsive Design for Accessibility
+
+- What happens when you zoom in for very large text: usually goes to mobile viewed
+- WebAIM checklist: page should be readable when font size is doubled
+- make sure you always use a meta viewport tag:
+```html
+<meta name="viewport content=" width="device-width, initial-scale=1">
+```
+- don't set "user-scalable: no" in your width, prevents pinch zooming
+- Use relative units so that text can enlarge, e.g. em and rem
+- Use appropriately sized and spaced touch targets: 48dp
+  - you can add padding around icons to make this work
+
+
+### Color and Contrast
+
+- Contrast ratio: measurement of contrast between foreground and background (I have no idea how this is being calculated, but black-on-white was something like 16:1)
+- WebAIM recommends minimum contrast of 4.5:1, 3:1 for >= 18pt font, or >= 14pt bold --> This is based on average 80 yo user
+- For users with visual impairments, prefer 7.1
+- Accessibility properties in dev tools can show you the contrast ratio
+
+- WebAIM 1.4.1 Color alone should not be used to convey information
+e.g. Just using red color change to show invalid form inputs
