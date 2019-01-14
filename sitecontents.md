@@ -18,7 +18,7 @@ In my free time, I play Roller Derby with the San Francisco Shevil Dead of [Bay 
 
 ### Rails
 
-- [####Let's Git It](http://lets-git-it.herokuapp.com)
+####[Let's Git It](http://lets-git-it.herokuapp.com)
 
 ...An app to help students in intensive coding development programs better track their progress and focus on the accomplishments of each day
 
@@ -35,15 +35,15 @@ In my free time, I play Roller Derby with the San Francisco Shevil Dead of [Bay 
 
 ### MVCode
 
-- [Temple Dungeon](https://www.mvcode.com/courses/temple-dungeon)
+####[Temple Dungeon](https://www.mvcode.com/courses/temple-dungeon)
 
-...A project in [ScriptCraft](https://github.com/walterhiggins/ScriptCraft) to first build a dungeon structure and then use classes to create a game that traps players in rooms until they complete certain tasks.
+A project in [ScriptCraft](https://github.com/walterhiggins/ScriptCraft) to first build a dungeon structure and then use classes to create a game that traps players in rooms until they complete certain tasks.
 
-...[See the demo on YouTube](https://youtu.be/5pFM687w8Eo)
+[See the demo on YouTube](https://youtu.be/5pFM687w8Eo)
 
-- [Side Scroll Adventure](https://www.mvcode.com/courses/side-scroll-adventure)
+####[Side Scroll Adventure](https://www.mvcode.com/courses/side-scroll-adventure)
 
-...A project in [ProcessingJS](http://processingjs.org/) designed to introduce students systematically to core concepts in programming
+A project in [ProcessingJS](http://processingjs.org/) designed to introduce students systematically to core concepts in programming
 
 ## Contact
 
