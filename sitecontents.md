@@ -19,10 +19,10 @@ In my free time, I play Roller Derby with the San Francisco Shevil Dead of [Bay 
 ### Rails
 
 - [####Let's Git It](http://lets-git-it.herokuapp.com)
-GitHub Workflow Gamification
-An app to help students in intensive coding development programs better track their progress and focus on the accomplishments of each day
-  <img width= "40%" src="images/letsgitit.png">
-[On GitHub](https://github.com/jonbent/lets-git-it)
+
+...An app to help students in intensive coding development programs better track their progress and focus on the accomplishments of each day
+
+...[On GitHub](https://github.com/jonbent/lets-git-it)
 
 
 ### On Other Sites
@@ -36,10 +36,14 @@ An app to help students in intensive coding development programs better track th
 ### MVCode
 
 - [Temple Dungeon](https://www.mvcode.com/courses/temple-dungeon)
-  A project in [ScriptCraft](https://github.com/walterhiggins/ScriptCraft) to first build a dungeon structure and then use classes to create a game that traps players in rooms until they complete certain tasks.
-  [See the demo on YouTube](https://youtu.be/5pFM687w8Eo)
+
+...A project in [ScriptCraft](https://github.com/walterhiggins/ScriptCraft) to first build a dungeon structure and then use classes to create a game that traps players in rooms until they complete certain tasks.
+
+...[See the demo on YouTube](https://youtu.be/5pFM687w8Eo)
+
 - [Side Scroll Adventure](https://www.mvcode.com/courses/side-scroll-adventure)
-  A project in [ProcessingJS](http://processingjs.org/) designed to introduce students systematically to core concepts in programming
+
+...A project in [ProcessingJS](http://processingjs.org/) designed to introduce students systematically to core concepts in programming
 
 ## Contact
 
