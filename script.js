@@ -1,28 +1,20 @@
-$(document).ready(function () {
-
-  // var small = window.matchMedia("(max-width: 600px)");
-  // console.log(small)
-  $('#navbar li').on('click', function(){
-    $('#navbar li').removeClass();
-    $(this).addClass("active");
-  });
-
-  $('#navbar li a').on('click', function(){
-    console.log("click")
-    $('.contents section').hide();
-    var section = $(this).attr('href');
-    $(section).css("display", "block")
-    console.log(section)
-    // if(small){
-    //   $('#navlinks').css('height', '0')
-    // }
+const navLinks = document.querySelectorAll('#navbar li');
+const navLinkTargets = document.querySelectorAll('#navbar li a');
+const sections = document.querySelectorAll('.contents section')
+for(let i=0; i<navLinks.length; i++){
+  navLinks[i].addEventListener('click', (event) => {
+      navLinks.forEach((link) =>{
+        link.classList.remove('active')
+      })
+      navLinks[i].classList.add('active')
   })
-  // if(small){
-  //   $('.menu-nav').on('click', function(){
-  //     console.log("clicked the menu!")
-  //     $('#navlinks').css('height', 'auto')
-  //   })
-  // }
+}
+for(let i=0; i<navLinkTargets.length; i++){
+  navLinkTargets[i].addEventListener('click', (event)=>{
+    sections.forEach((section)=>{section.style.display = "none"})
+    let target = navLinkTargets[i].getAttribute('href');
+    let targetSection = document.querySelector(target);
+    targetSection.style.display = "block";
+  })
 
-
-});
+}
