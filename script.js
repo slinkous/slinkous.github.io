@@ -1,3 +1,5 @@
+//color palette https://lospec.com/palette-list/justparchment8
+
 const navLinks = document.querySelectorAll('#navbar li');
 const navLinkTargets = document.querySelectorAll('#navbar li a');
 const sections = document.querySelectorAll('.contents section')

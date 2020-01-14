@@ -20,11 +20,20 @@ main {
   top: 200px;
   bottom: 100px;
   overflow-y: auto;
+  background-color: #e6ceac;
+  border-color: #8b7d62;
+  border-style: outset;
+  border-radius: 1% 7%;
+  border-width: 3px;
+  padding: 1em;
+  margin: 0 1em;
+  width: 100%;
 }
 footer {
   bottom: 0px;
   height: 200px;
   overflow: hidden;
+  float: none;
 }
 
 
@@ -36,19 +45,20 @@ body {
   font-size: 1em;
 }
 
-section {
+/* section {
   background-color: #e6ceac;
   border-color: #8b7d62;
   border-style: outset;
+  border-radius: 1% 10% 7% 5%;
   border-width: 3px;
   padding: 1em;
   margin: 2em;
   width: 100%;
-}
+} */
 
 img {
   /* max-width: 30%; */
-  filter: sepia(50%)
+  filter: sepia(60%)
 }
 
 h1, h2, h3 {
@@ -60,6 +70,7 @@ h1, h2, h3 {
 a {
   color: #524839;
   text-decoration: none;
+  font-weight: bold;
 }
 
 nav {
