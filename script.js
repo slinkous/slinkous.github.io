@@ -1,6 +1,12 @@
 const navLinks = document.querySelectorAll('#navbar li');
 const navLinkTargets = document.querySelectorAll('#navbar li a');
 const sections = document.querySelectorAll('.contents section')
+
+for(let i=0; i<sections.length; i++){
+  sections[i].style.display ="none";
+  document.querySelector('#about').style.display = "block";
+}
+
 for(let i=0; i<navLinks.length; i++){
   navLinks[i].addEventListener('click', (event) => {
       navLinks.forEach((link) =>{

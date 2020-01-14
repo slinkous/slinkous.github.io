@@ -1,0 +1,81 @@
+* {
+  box-sizing: border-box;
+  overflow: hidden;
+}
+body {
+  width: 100vw;
+  height: 100vh;
+}
+
+header, footer, main {
+  width: 98%;
+  position: absolute;
+}
+header{
+  top: 0px;
+  height: 200px;
+  /* overflow: hidden; */
+}
+main {
+  top: 200px;
+  bottom: 100px;
+  overflow-y: auto;
+}
+footer {
+  bottom: 0px;
+  height: 200px;
+  overflow: hidden;
+}
+
+
+body {
+  font-family: 'Source Serif Pro';
+  background-color: #bda583;
+  color: #292418;
+  float: none;
+  font-size: 1em;
+}
+
+section {
+  background-color: #e6ceac;
+  border-color: #8b7d62;
+  border-style: outset;
+  border-width: 3px;
+  padding: 1em;
+  margin: 2em;
+  width: 100%;
+}
+
+img {
+  /* max-width: 30%; */
+  filter: sepia(50%)
+}
+
+h1, h2, h3 {
+  font-family: 'Inknut Antiqua', serif;
+  clear: both;
+  text-align: center;
+}
+
+a {
+  color: #524839;
+  text-decoration: none;
+}
+
+nav {
+}
+
+ul li{
+  float: left;
+  padding: 1em;
+  list-style-type: none;
+  /* width: 100%; */
+  border-color: #73654a ;
+  border-width: 1px;
+  font-size: 1.25em;
+}
+
+#work p, #work img, #hobby p, #hobby img {
+  width: 48%;
+  float: left;
+}
