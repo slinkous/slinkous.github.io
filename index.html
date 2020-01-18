@@ -3,47 +3,54 @@
   <head>
     <meta charset="utf-8">
     <title>Sarah Linkous</title>
-    <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="style2.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css?family=Inknut+Antiqua|Source+Serif+Pro&display=swap" rel="stylesheet">
-    <!-- <link rel="stylesheet" type="text/css" href="index.css" /> -->
+    <link rel="stylesheet" type="text/css" href="layout.css" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
     <script type="module" src="script.js"></script>
   </head>
   <body>
     <header>
-      <h1>Sarah Linkous</h1>
-      <div id="navbar">
-        <nav>
-          <ul id="navlinks">
-            <li class="active"><a href="#about">About</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#writing">Writing</a></li>
-            <li><a href="#courses">Courses</a></li>
-            <li><a href="#games">Games</a></li>
-          </ul>
-        </nav>
+      <div class="row">
+        <a href="#main-menu" class="menu-toggle" id="main-menu-toggle" aria-label="Open main menu">
+          <span aria-hidden="true" class="icon">☰</span>
+        </a>
+        <h1>Sarah Linkous</h1>
       </div>
-
+      <nav id="main-menu" class="main-menu" aria-label="Main menu">
+        <a href="#main-menu-toggle" id="main-menu-close" class="menu-close" aria-label="Close main menu">
+          <span aria-hidden="true" class="icon">𝖷</span>
+        </a>
+        <ul id="navlinks">
+          <li class="active"><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#writing">Writing</a></li>
+          <li><a href="#courses">Courses</a></li>
+          <li><a href="#games">Games</a></li>
+        </ul>
+      </nav>
     </header>
     <main>
       <div class="contents">
         <section id="about">
           <h2>About</h2>
-          <div id="intro">
-            <p>Hello, everyone! I am a software developer, teacher, and technical writer living in the Bay Area.</p>
-            <p>I first came to the Bay to take a course on Cognitive Linguistics at U.C. Berkeley that forever changed my understanding of how language lets us understand the world together. I think it is amazing that we can convey our deepest thoughts using a system of mouth grunts and scrawled lines.</p>
+          <div class="row">
+            <div id="intro" class="col-2">
+              <p>Hello, everyone! I am a software developer, teacher, and technical writer living in the Bay Area.</p>
+              <p>I first came to the Bay to take a course on Cognitive Linguistics at U.C. Berkeley that forever changed my understanding of how language lets us understand the world together. I think it is amazing that we can convey our deepest thoughts using a system of mouth grunts and scrawled lines.</p>
+            </div>
           </div>
-          <div id="work">
-            <h3>My Job</h3>
-            <p>I am a Curriculum Developer for <a href="https://www.mvcode.com">MVCode</a>, where I write lessons and courses designed to introduce younger students to Computer Science in an engaging, project-based curriculum. I also teach classes and get to attend events related to our learning subjects.</p>
-            <p><img src="/images/minefaire.jpg" alt="My friend Teddy and I at Minefaire" id="mvcode"></p>
-          </div>
-          <div id="hobby">
-            <h3 id="my-hobby">My Hobby</h3>
-            <p>In my free time, I play Roller Derby with the San Francisco Shevil Dead of <a href="http://www.bayareaderby.com">Bay Area Derby</a>. You can follow me as number 54 - Disastronaut!</p>
-            <p><img src="/images/derby.jpg" alt="Me, in my roller derby uniform" id="derby"></p>
-          </div>
+          <div id="work" class="row">
+            <h3>Work</h3>
+              <p>I am a freelance Computer Science Curriculum Developer, producing content for <a href="https://www.mvcode.com">MVCode</a>, where I write lessons and courses designed to introduce younger students to Computer Science in an engaging, project-based curriculum. I also teach classes and get to attend events related to our learning subjects.</p>
 
+              <p><img src="/images/minefaire.jpg" alt="My friend Teddy and I at Minefaire" id="mvcode"></p>
+          </div>
+          <div id="hobby" class="row">
+            <h3 id="my-hobby">Play</h3>
+              <p>I referee, coach, and play roller derby with <a href="http://www.bayareaderby.com">Bay Area Derby</a>. You can follow me as number 54 - Disastronaut!</p>
+              <p><img src="/images/derby.jpg" alt="Me, in my roller derby uniform" id="derby"></p>
+          </div>
         </section>
         <section id="projects">
           <h2>Projects</h2>
@@ -108,7 +115,7 @@
           <li><a href="https://slinkous.mvcode.site">MVCode</a></li>
         </ul>
       </div>
-
+      <!-- <img src="/images/bota-trump-16.jpg" alt="The Tower" id="bgImage"> -->
     </footer>
 
   </body>

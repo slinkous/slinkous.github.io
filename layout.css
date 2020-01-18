@@ -1,0 +1,127 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+body {
+  font-size: 24px;
+}
+h1, h2, h3 {
+  text-align: center;
+}
+img {
+  max-width: 100%;
+}
+
+header .row {
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+header .row h1{
+  flex-basis: 80%;
+}
+
+.menu-toggle {
+  margin: 1rem;
+}
+
+.main-menu {
+  position: fixed;
+  display: none;
+  left: -300px;
+  top: 0;
+  height: 100%;
+  overflow-x: visible;
+  overflow-y: auto;
+  transition: left 0.3 ease;
+  z-index: 99;
+}
+
+.main-menu ul{
+  margin: 0;
+  padding-top: 2.5 em;
+  min-height: 100%;
+  width: 300px;
+}
+.main-menu ul li {
+  font-size: 1.25em;
+  text-align: center;
+}
+
+.main-menu a {
+  display: block;
+  padding: 0.75em;
+}
+
+.main-menu .menu-close {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.main-menu:target {
+  display: block;
+  left: 0;
+}
+
+.main-menu:target .menu-close {
+  z-index: 101;
+}
+
+.main-menu:target ul {
+  position: relative;
+  z-index: 100;
+}
+
+.icon {
+  font-weight: bold;
+  font-size: 1.5rem
+}
+
+#work img, #hobby img {
+  margin: 0 0 5% 5% ;
+}
+
+.contents section {
+  display: none;
+  padding: 1rem;
+}
+
+
+@media only screen and (min-width: 800px){
+  .main-menu li, #contact li {
+    display: inline-block;
+  }
+  a>.icon{
+    display: none;
+  }
+  .main-menu{
+    position: static;
+    display: block;
+  }
+  .main-menu ul, #contact ul {
+    text-align: center;
+    padding: 0;
+    height: auto;
+    width: auto;
+    background: none;
+    overflow: hidden;
+  }
+  /* #about {
+    display="flex";
+  } */
+  #work, #hobby {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  #work h3, #hobby h3 {
+    flex-basis: 100%;
+  }
+
+  #work img, #work p, #hobby img, #hobby p{
+    flex-basis: 48%;
+  }
+}
