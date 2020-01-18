@@ -107,7 +107,10 @@ header .row h1{
     height: auto;
     width: auto;
     background: none;
-    overflow: hidden;
+    overflow: show;
+  }
+  #contact ul{
+    margin: 1em;
   }
   /* #about {
     display="flex";

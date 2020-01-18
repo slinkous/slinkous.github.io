@@ -4,6 +4,7 @@ const navLinks = document.querySelectorAll('.main-menu li');
 const navLinkTargets = document.querySelectorAll('.main-menu li a');
 const sections = document.querySelectorAll('.contents section')
 
+
 document.querySelector('#about').style.display="block"
 
 
